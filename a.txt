@@ -1,0 +1,95 @@
+"# Configurar usuário
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+
+# Ver configurações
+git config --list
+Inicialização e Clonagem
+bash
+# Iniciar novo repositório
+git init
+
+# Clonar repositório existente
+git clone <url-do-repositorio>
+Trabalhando com Arquivos
+bash
+# Ver status dos arquivos
+git status
+
+# Adicionar arquivos específicos
+git add arquivo.txt
+
+# Adicionar todos os arquivos modificados
+git add .
+
+# Commitar as mudanças
+git commit -m "Mensagem do commit"
+
+# Adicionar e commitar em um passo (apenas para arquivos já rastreados)
+git commit -am "Mensagem do commit"
+Visualizando Informações
+bash
+# Ver histórico de commits
+git log
+
+# Histórico simplificado
+git log --oneline
+
+# Ver diferenças não commitadas
+git diff
+
+# Ver diferenças em arquivos staged
+git diff --staged
+Ramificação (Branching)
+bash
+# Listar branches
+git branch
+
+# Criar nova branch
+git branch nome-da-branch
+
+# Mudar para branch
+git checkout nome-da-branch
+
+# Criar e mudar para branch
+git checkout -b nome-da-branch
+
+# Deletar branch
+git branch -d nome-da-branch
+Sincronização com Repositório Remoto
+bash
+# Adicionar repositório remoto
+git remote add origin <url>
+
+# Enviar commits para o remoto
+git push origin main
+
+# Baixar alterações do remoto
+git pull origin main
+
+# Ver repositórios remotos
+git remote -v
+Desfazendo Ações
+bash
+# Desfazer mudanças em arquivo não commitado
+git checkout -- arquivo.txt
+
+# Remover arquivo do staged (mas manter mudanças)
+git reset HEAD arquivo.txt
+
+# Alterar último commit
+git commit --amend
+Outros Comandos Úteis
+bash
+# Ver quem modificou cada linha
+git blame arquivo.txt
+
+# Ignorar arquivos (criar arquivo .gitignore)
+# Listar conteúdo: node_modules/, *.log, etc.
+
+# Guardar mudanças temporariamente
+git stash
+
+# Recuperar mudanças guardadas
+git stash pop
+Estes são os comandos essenciais para começar com Git. Pratique regularmente para se familiarizar com o fluxo de trabalho!"
